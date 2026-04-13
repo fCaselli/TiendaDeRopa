@@ -1,0 +1,39 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Dependencies
+backend/node_modules/
+node_modules/
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Build artifacts / caches
+.tmp/
+tmp/
+.cache/
+dist/
+build/
+
+# Generated frontend runtime config
+# Se versiona a propósito para que el frontend estático funcione de entrada.
+# Si preferís regenerarlo siempre en cada entorno, descomentá la línea siguiente.
+# frontend/js/config.js

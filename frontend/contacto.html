@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER | Contacto</title>
+  <meta
+    name="description"
+    content="Ponete en contacto con ATELIER para consultas, compras y asesoramiento."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a
+    href="#"
+    class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" data-whatsapp-link
+    aria-label="WhatsApp"
+  >
+    ✆
+  </a>
+
+  <div class="topbar">
+    <div class="container topbar__content">
+      <p>Atención personalizada · Respuesta rápida · Asesoramiento por talle y compra</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">ATELIER</a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" class="active-link">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="catalogo.html" class="btn btn--ghost">Comprar</a>
+        <a href="carrito.html" class="btn btn--dark">Carrito (<span id="cart-count">0</span>)</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo-banner">
+      <div class="container promo-banner__content">
+        <span>Estamos para ayudarte</span>
+        <a href="#" target="_blank" rel="noopener noreferrer" data-whatsapp-link>Escribinos por WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero__content fade-up">
+          <span class="eyebrow">Contacto</span>
+          <h1>Estamos para ayudarte</h1>
+          <p>
+            Resolvé dudas sobre talles, stock, envíos, cambios o compras. También
+            podés escribirnos si querés asesoramiento personalizado antes de comprar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-card fade-up">
+          <span class="section__eyebrow">Formulario</span>
+          <h2>Hablemos</h2>
+          <p>Completá el formulario y te responderemos a la brevedad.</p>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required minlength="2" maxlength="80" />
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required maxlength="120" />
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto" required minlength="3" maxlength="120" />
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="6" placeholder="Escribí tu mensaje" required minlength="10" maxlength="2000"></textarea>
+            <button type="submit" class="btn btn--dark">Enviar consulta</button>
+          </form>
+        </div>
+
+        <div class="contact-card contact-card--info fade-up delay-1">
+          <span class="section__eyebrow section__eyebrow--light">Información</span>
+          <h3>Canales de atención</h3>
+
+          <ul class="contact-list">
+            <li><strong>WhatsApp:</strong> <span data-whatsapp-text>+54 9 11 1234 5678</span></li>
+            <li><strong>Email:</strong> hola@atelier.com</li>
+            <li><strong>Instagram:</strong> @atelier.store</li>
+            <li><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
+            <li><strong>Horario:</strong> Lun a Vie de 9 a 18 hs</li>
+          </ul>
+
+          <div class="contact-extra">
+            <h3>Preguntas rápidas</h3>
+
+            <div class="faq-list faq-list--compact">
+              <details>
+                <summary>¿Responden por WhatsApp?</summary>
+                <p>Sí, podés escribirnos y te asesoramos con talles, stock y proceso de compra.</p>
+              </details>
+
+              <details>
+                <summary>¿Hacen envíos?</summary>
+                <p>Sí, realizamos envíos a todo el país con seguimiento.</p>
+              </details>
+
+              <details>
+                <summary>¿Puedo cambiar una prenda?</summary>
+                <p>Sí, el primer cambio no tiene costo dentro del plazo informado.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container shipping-box fade-up">
+        <div>
+          <span class="section__eyebrow">Atención</span>
+          <h2>Una experiencia cercana, clara y profesional</h2>
+        </div>
+
+        <div class="shipping-box__grid">
+          <div>
+            <h3>Asesoramiento real</h3>
+            <p>Te ayudamos a elegir talle, producto y combinación según tu necesidad.</p>
+          </div>
+          <div>
+            <h3>Respuesta rápida</h3>
+            <p>Buscamos responder consultas dentro del horario comercial lo antes posible.</p>
+          </div>
+          <div>
+            <h3>Compra segura</h3>
+            <p>Te acompañamos en todo el proceso desde la duda inicial hasta la compra final.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo">ATELIER</a>
+        <p>Tienda de indumentaria con diseño contemporáneo y enfoque comercial.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="contacto.html">Envíos y devoluciones</a></li>
+          <li><a href="contacto.html">Guía de talles</a></li>
+          <li><a href="contacto.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>WhatsApp: <span data-whatsapp-text>+54 9 11 1234 5678</span></li>
+          <li>Email: hola@atelier.com</li>
+          <li>Instagram: @atelier.store</li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 ATELIER. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER | Producto</title>
+  <meta
+    name="description"
+    content="Detalle profesional de producto para una tienda de ropa moderna."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a
+    href="#"
+    class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" data-whatsapp-link
+    aria-label="WhatsApp"
+  >
+    ✆
+  </a>
+
+  <div class="topbar">
+    <div class="container topbar__content">
+      <p>Atención personalizada · Asesoramiento por talle · Envíos a todo el país</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">ATELIER</a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="catalogo.html" class="btn btn--ghost">Seguir comprando</a>
+        <a href="contacto.html" class="btn btn--dark">Consultar</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo-banner">
+      <div class="container promo-banner__content">
+        <span>Producto premium seleccionado</span>
+        <a href="catalogo.html">Volver al catálogo</a>
+      </div>
+    </section>
+
+    <section class="product-hero">
+      <div class="container">
+        <div class="product-hero__content fade-up">
+          <span class="eyebrow">Ficha de producto</span>
+          <h1>Detalle pensado para vender mejor</h1>
+          <p>
+            Una página de producto clara, visual y profesional, ideal para reforzar
+            valor percibido, resolver dudas y ayudar a cerrar la compra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-section">
+      <div class="container" id="product-detail-container">
+        <div class="product-loading-card">
+          <p>Cargando producto...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container shipping-box fade-up">
+        <div>
+          <span class="section__eyebrow">Beneficios de compra</span>
+          <h2>Todo lo que el cliente necesita saber antes de comprar</h2>
+        </div>
+
+        <div class="shipping-box__grid">
+          <div>
+            <h3>Envíos</h3>
+            <p>Despacho dentro de las 24/48 hs hábiles con seguimiento en tiempo real.</p>
+          </div>
+          <div>
+            <h3>Cambios</h3>
+            <p>Primer cambio sin costo dentro de los 30 días, según disponibilidad.</p>
+          </div>
+          <div>
+            <h3>Asesoramiento</h3>
+            <p>Podés escribir por WhatsApp para confirmar talle, stock o combinación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-box fade-up">
+        <div class="section__top">
+          <div>
+            <span class="section__eyebrow">Preguntas frecuentes</span>
+            <h2>Información útil sobre este producto</h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>¿Cómo elijo el talle correcto?</summary>
+            <p>
+              Podés consultar la guía de talles o escribirnos por WhatsApp para recibir
+              asesoramiento según tus medidas.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo cambiar el producto si no me queda bien?</summary>
+            <p>
+              Sí. Tenés 30 días para solicitar cambio por talle o modelo, sujeto a stock.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cuánto tarda el envío?</summary>
+            <p>
+              Generalmente entre 24 y 72 hs hábiles, según la localidad y el método de envío.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container newsletter fade-up">
+        <div>
+          <span class="section__eyebrow">Newsletter</span>
+          <h2>Recibí novedades y lanzamientos</h2>
+          <p>
+            Sumate para enterarte primero de nuevos ingresos, promos y colecciones.
+          </p>
+        </div>
+
+        <form class="newsletter__form" id="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+          <button type="submit" class="btn btn--dark">Suscribirme</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo">ATELIER</a>
+        <p>Tienda de indumentaria con diseño contemporáneo y enfoque comercial.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="contacto.html">Envíos y devoluciones</a></li>
+          <li><a href="contacto.html">Guía de talles</a></li>
+          <li><a href="contacto.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>WhatsApp: <span data-whatsapp-text>+54 9 11 1234 5678</span></li>
+          <li>Email: hola@atelier.com</li>
+          <li>Instagram: @atelier.store</li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 ATELIER. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

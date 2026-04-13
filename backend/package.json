@@ -1,0 +1,33 @@
+{
+  "name": "atelier-api",
+  "version": "2.2.0",
+  "private": true,
+  "description": "API Express + MongoDB para ATELIER",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "config:frontend": "node scripts/sync-frontend-config.js",
+    "dev": "npm run config:frontend && node --watch src/server.js",
+    "start": "npm run config:frontend && node src/server.js",
+    "seed": "npm run config:frontend && node src/seed.js",
+    "test": "npm run config:frontend && node --test test/api.test.js",
+    "test:watch": "node --test --watch",
+    "check": "npm run test:all && npm run lint",
+    "lint": "cd .. && node ./backend/node_modules/eslint/bin/eslint.js backend/src backend/test frontend/js/main.js frontend/js/modules --config backend/eslint.config.js",
+    "test:frontend": "npm run config:frontend && node --test test/frontend/*.test.js",
+    "test:all": "npm run test && npm run test:frontend"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.1",
+    "eslint": "^9.36.0"
+  }
+}

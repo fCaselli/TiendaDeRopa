@@ -1,0 +1,17 @@
+export const elements = {
+  menuToggle: document.getElementById("menu-toggle"),
+  nav: document.getElementById("nav"),
+  contactForm: document.getElementById("contact-form"),
+  newsletterForm: document.getElementById("newsletter-form"),
+  animatedItems: document.querySelectorAll(".fade-up"),
+  productsContainer: document.getElementById("products-container"),
+  categoriesContainer: document.getElementById("categories-container"),
+  productDetailContainer: document.getElementById("product-detail-container"),
+  searchInput: document.getElementById("search-input"),
+  searchButton: document.getElementById("search-button"),
+  cartContainer: document.getElementById("cart-container"),
+  cartSubtotal: document.getElementById("cart-subtotal"),
+  clearCartButton: document.getElementById("clear-cart"),
+  checkoutWhatsappButton: document.getElementById("checkout-whatsapp"),
+  cartCountElements: document.querySelectorAll("#cart-count"),
+};

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER | Catálogo</title>
+  <meta
+    name="description"
+    content="Explorá el catálogo de prendas y accesorios de ATELIER."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a
+    href="#"
+    class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" data-whatsapp-link
+    aria-label="WhatsApp"
+  >
+    ✆
+  </a>
+
+  <div class="topbar">
+    <div class="container topbar__content">
+      <p>Envíos a todo el país · 3 y 6 cuotas seleccionadas · Primer cambio sin costo</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">ATELIER</a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" class="active-link">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="contacto.html" class="btn btn--ghost">Consultar</a>
+        <a href="carrito.html" class="btn btn--dark">Carrito (<span id="cart-count">0</span>)</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo-banner">
+      <div class="container promo-banner__content">
+        <span>Nuevos ingresos esta semana</span>
+        <a href="contacto.html">Consultá por stock</a>
+      </div>
+    </section>
+
+    <section class="catalog-hero">
+      <div class="container">
+        <div class="catalog-hero__content fade-up">
+          <span class="eyebrow">Catálogo</span>
+          <h1>Nuestra selección de productos</h1>
+          <p>
+            Descubrí prendas con estética moderna, estructura premium y una experiencia
+            de compra diseñada para sentirse clara, visual y profesional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="container filters__list fade-up delay-1" id="categories-container">
+        <button class="filter-btn active" data-category="all">Todo</button>
+      </div>
+    </section>
+
+    <section class="section catalog-section">
+      <div class="container">
+        <div class="catalog-toolbar fade-up">
+          <div class="catalog-toolbar__text">
+            <span class="section__eyebrow">Colección completa</span>
+            <h2>Prendas destacadas</h2>
+            <p>Catálogo dinámico conectado al backend con categorías y búsqueda real.</p>
+          </div>
+
+          <div class="catalog-search">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Buscar productos..."
+            />
+            <button class="btn btn--dark" id="search-button">Buscar</button>
+          </div>
+        </div>
+
+        <div class="products" id="products-container"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container shipping-box fade-up">
+        <div>
+          <span class="section__eyebrow">Comprá con confianza</span>
+          <h2>Una experiencia simple, clara y profesional</h2>
+        </div>
+
+        <div class="shipping-box__grid">
+          <div>
+            <h3>Envíos rápidos</h3>
+            <p>Procesamos pedidos dentro de las 24/48 hs hábiles con seguimiento.</p>
+          </div>
+          <div>
+            <h3>Pago seguro</h3>
+            <p>Transferencia, tarjetas y promociones seleccionadas para facilitar la compra.</p>
+          </div>
+          <div>
+            <h3>Asesoramiento real</h3>
+            <p>Consultá por talles, stock y recomendaciones para comprar con seguridad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo">ATELIER</a>
+        <p>Tienda de indumentaria con diseño contemporáneo y enfoque comercial.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="contacto.html">Envíos y devoluciones</a></li>
+          <li><a href="contacto.html">Guía de talles</a></li>
+          <li><a href="contacto.html">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>WhatsApp: <span data-whatsapp-text>+54 9 11 1234 5678</span></li>
+          <li>Email: hola@atelier.com</li>
+          <li>Instagram: @atelier.store</li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 ATELIER. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
